@@ -8,7 +8,19 @@
 </head>
 <body>
 
-<%= yield %>
+	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  		<div class="container">
+		
+  			<a href="#" class="navbar-brand">Preescolar Carlos Pellicer Cámara</a>
+  			<ul class="nav navbar-nav">
+        		<li class="active"><%= link_to "Inicio", statuses_path %></li>
+        	</ul>
+    	</div>
+	</nav>
+
+<div class="container">
+	<%= yield %>
+</div>
 
 </body>
 </html>
